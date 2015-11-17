@@ -1,7 +1,7 @@
 # Anonymous youtube playlists
 
 ## The issue
-I often come across playlists on spotify on the internet but I do not have a spotify account, nor do I wish to install their closed-source software or use their flash-based web player. Yet they appear to bar me from accessing the names of the collections of songs someone else has put together! I came across [[https://spotlistr.herokuapp.com/#/export/spotify-playlist]] and this gives me the names of the songs on the playlist.
+I often come across playlists on spotify on the internet but I do not have a spotify account, nor do I wish to install their closed-source software or use their flash-based web player. Yet they appear to bar me from accessing the names of the collections of songs someone else has put together! I came across https://spotlistr.herokuapp.com/#/export/spotify-playlist and this gives me the names of the songs on the playlist.
 
 But how do I now listen to them without spotify?
 
