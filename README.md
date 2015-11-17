@@ -20,7 +20,7 @@ or if you have a file with each file in a list:
 ./process.sh <filename>
 ```
 
-to go through, find the youtube videos and process them into an index.html file. Open index.html in any browser and leave in a background tab :)
+to go through, find the youtube videos (searching one by one) and process them into an index.html file. Open index.html in any browser and leave in a background tab and enjoy :)
 
 ## Random lists of youtube videos
 This also works for a list of any random youtube videos. If you have a file, `rawlist`, containing urls for all your youtube videos, parse them into index.html like this:
@@ -35,4 +35,4 @@ or for an arbitrary filename,
 ./rawlist.sh <filename>
 ```
 
-Now you can just open index.html in any browser and the videos will play one after another.
+Now you can just open index.html in any browser and the videos will play one after another. :)
