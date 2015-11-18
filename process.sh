@@ -8,7 +8,7 @@ if [ "$#" -ne 1 ]; then
 fi
 
 while read txt; do
-    list2+=$(wget -O - "https://www.youtube.com/results?search_query=$txt" | grep "watch?" | cut -d'"' -f6 | grep -v list | grep watch | cut -d'=' -f2 | sed -n '1 p')
+    list2+=$(wget -T 10 -O - "https://www.youtube.com/results?search_query=$txt" | grep "watch?" | cut -d'"' -f6 | grep -v list | grep watch | cut -d'=' -f2 | sed -n '1 p')
     list2+=$'\n'
 done<<<"$(cat "$file")"
 

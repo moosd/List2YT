@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <script src="https://www.youtube.com/player_api"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
     <style>
         body {text-align: center;}
         #player {}
@@ -21,10 +21,23 @@
         var id = 0;
 
         var player;
-        function onYouTubePlayerAPIReady() {
+        function onYouTubeIframeAPIReady() {
             playlist = Base64.decode(data).split("\n");
             names = Base64.decode(namesd).split("\n");
             mkplayer();
+            document.onkeyup = function(evt) {
+                evt = evt || window.event;
+                if(evt.keyCode == 75){
+                    if(player.getPlayerState() == 2)
+                        player.playVideo()
+                    else if(player.getPlayerState() == 1)
+                        player.pauseVideo()
+                } else if(evt.keyCode == 74) {
+                    player.seekTo(player.getCurrentTime() - 10, true)
+                } else if(evt.keyCode == 76){
+                    player.seekTo(player.getCurrentTime() + 10, true)
+                }
+            }
         }
 
         function onPlayerReady(event) {
