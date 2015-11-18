@@ -1,7 +1,7 @@
 # Anonymous youtube playlists
 
 ## The issue
-I often come across playlists on spotify on the internet but I do not have a spotify account, nor do I wish to install their closed-source software or use their flash-based web player. Yet they appear to bar me from accessing the names of the collections of songs someone else has put together! I came across [[https://spotlistr.herokuapp.com/#/export/spotify-playlist]] and this gives me the names of the songs on the playlist.
+I often come across playlists on spotify on the internet but I do not have a spotify account, nor do I wish to install their closed-source software or use their flash-based web player. Yet they appear to bar me from accessing the names of the collections of songs someone else has put together! I came across https://spotlistr.herokuapp.com/#/export/spotify-playlist and this gives me the names of the songs on the playlist.
 
 But how do I now listen to them without spotify?
 
@@ -20,7 +20,7 @@ or if you have a file with each file in a list:
 ./process.sh <filename>
 ```
 
-to go through, find the youtube videos and process them into an index.html file. Open index.html in any browser and leave in a background tab :)
+to go through, find the youtube videos (searching one by one) and process them into an index.html file. Open index.html in any browser and leave in a background tab and enjoy :)
 
 ## Random lists of youtube videos
 This also works for a list of any random youtube videos. If you have a file, `rawlist`, containing urls for all your youtube videos, parse them into index.html like this:
@@ -35,4 +35,4 @@ or for an arbitrary filename,
 ./rawlist.sh <filename>
 ```
 
-Now you can just open index.html in any browser and the videos will play one after another.
+Now you can just open index.html in any browser and the videos will play one after another. :)
